@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development node index.js",
+    "start:prd": "cross-env NODE_ENV=production node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "google-books-search": "^0.3.1",
+    "koa": "^2.13.3",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^5.2.0",
+    "koa-joi-router": "^6.0.0",
+    "koa-joi-router-docs": "^1.0.3",
+    "koa-pino-logger": "^3.0.0",
+    "koa2-formidable": "^1.0.3",
+    "lodash": "^4.17.15",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "mongodb": "^3.6.9",
+    "path": "^0.12.7",
+    "pino-pretty": "^4.0.0",
+    "prettier": "^1.19.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {},
+  "_moduleAliases": {
+    "@root": ".",
+    "@src": "./src",
+    "@server": "./server"
+  }
+}
